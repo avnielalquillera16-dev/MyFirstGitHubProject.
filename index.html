@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Simple Website</title>
+  <style>
+    /* Basic Reset & Typography */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9fafb;
+    }
+
+    /* Navigation Bar */
+    header {
+      background: #1f2937;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.25rem;
+    }
+    nav a {
+      color: #d1d5db;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: #2563eb;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+    .hero h2 {
+      font-size: 2.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #2563eb;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Main Content Container */
+    main {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+    section {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    section h3 {
+      margin-bottom: 1rem;
+      color: #111827;
+    }
+
+    /* Simple Grid for Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: #f3f4f6;
+      padding: 1.25rem;
+      border-radius: 6px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header>
+    <h1>BrandName</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    <h2>Welcome to My Website</h2>
+    <p>A clean, responsive starter template built with pure HTML and CSS.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <section id="about">
+      <h3>About</h3>
+      <p>Replace this text with a short introduction about yourself, your project, or your business. Everything is contained in one file so it is easy to edit and host anywhere.</p>
+    </section>
+
+    <section id="services">
+      <h3>What I Offer</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Feature One</h4>
+          <p>Short description of your first service, skill, or product.</p>
+        </div>
+        <div class="card">
+          <h4>Feature Two</h4>
+          <p>Short description of your second service, skill, or product.</p>
+        </div>
+        <div class="card">
+          <h4>Feature Three</h4>
+          <p>Short description of your third service, skill, or product.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Email me at <a href="mailto:hello@example.com">hello@example.com</a> or connect on social media.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 BrandName. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
